@@ -1,0 +1,79 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "display": {
+        "separator": "➤  "
+  },
+  "modules": [
+    "title",
+    { "type": "separator", "string": "─" },
+    {
+        "type": "os",
+        "key": " OS                   "
+    },
+    {
+        "type": "kernel",
+        "key": " Kernel               "
+    },
+    {
+        "type": "packages",
+        "key": "󰏖 Packages             "
+    },
+    {
+        "type": "shell",
+        "key": " Shell                "
+    },
+    {
+        "type": "de",
+        "key": " Desktop Environment  "
+    },
+    {
+        "type": "wm",
+        "key": " Window Manager       "
+    },
+    {
+        "type": "font",
+        "key": " Font                 "
+    },
+    {
+        "type": "terminal",
+        "key": " Terminal             "
+    },
+    {
+        "type": "terminalfont",
+        "key": "󰯁 Terminal Font        "
+    },
+    {
+        "type": "cpu",
+        "key": "󰻠 CPU                  "
+    },
+    {
+        "type": "gpu",
+        "key": "󰢮 GPU                  "
+    },
+    {
+        "type": "Memory",
+        "key": "󰍛 RAM                  "
+    },
+    {
+        "type": "swap",
+        "key": " Swap                 "
+    },
+    {
+        "type": "disk",
+        "key": " Disk                 "
+    },
+    {
+        "type": "battery",
+        "key": " Battery              "
+    },
+    {
+        "type": "uptime",
+        "key": " Uptime               "
+    },
+    "break",
+    {
+        "type": "colors",
+        "symbol": "circle"
+    }
+  ]
+}
