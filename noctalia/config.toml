@@ -1,0 +1,21 @@
+[theme]
+mode = "dark"
+shell_mode = "follow"
+source = "wallpaper"
+wallpaper_scheme = "m3-content"
+[bar.default]
+position = "top"
+start = ["launcher", "wallpaper", "control-center", "workspaces"]
+center = ["clock"]
+end = ["media", "tray", "notifications", "clipboard", "network", "bluetooth", "volume", "brightness", "battery", "session"]
+
+[widget.launcher]
+custom_image = "~/.config/noctalia/assets/arch.svg"
+[widget.network]
+show_label = false
+[widget.brightness]
+show_label = false
+[widget.volume]
+show_label = false
+[widget.media]
+hide_when_no_media = true
