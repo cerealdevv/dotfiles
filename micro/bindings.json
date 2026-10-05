@@ -1,0 +1,11 @@
+{
+    "Ctrl-y": "Undo",
+    "Ctrl-z": "Redo",
+    "Ctrl-q": "Save,Quit",
+    "Ctrl-s": "Save",
+    "Ctrl-x": "Quit",
+    "Ctrl-c": "Copy",
+    "Ctrl-v": "Paste",
+    "Ctrl-f": "Find",
+    "Ctrl-k": "Cut"
+}

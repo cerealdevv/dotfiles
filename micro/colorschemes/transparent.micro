@@ -1,0 +1,10 @@
+color-link default "white"
+
+color-link comment "brightblack"
+color-link constant "magenta"
+color-link identifier "cyan"
+color-link statement "yellow"
+color-link symbol "white"
+color-link type "green"
+color-link special "red"
+color-link underlined "underline"
