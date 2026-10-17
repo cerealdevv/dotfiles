@@ -19,67 +19,68 @@
     { "type": "separator", "string": "─" },
     {
         "type": "os",
-        "key": " OS                 "
+        "key": " OS             "
     },
     {
         "type": "kernel",
-        "key": " Kernel             "
+        "key": " Kernel         "
     },
     {
         "type": "packages",
-        "key": "󰏖 Packages           "
+        "key": "󰏖 Packages       "
     },
     {
         "type": "shell",
-        "key": " Shell              "
+        "key": " Shell          "
     },
     {
-        "type": "de",
-        "key": " Desktop Environment"
+        "type": "command",
+        "key": " Desktop Shell  ",
+        "text": "echo \"Noctalia $(noctalia --version | awk '{print $NF}' | tr -d 'v')\""
     },
     {
         "type": "wm",
-        "key": " Window Manager     "
+        "key": " Window Manager "
     },
     {
         "type": "font",
-        "key": " Font               "
+        "key": " Font           "
     },
     {
         "type": "terminal",
-        "key": " Terminal           "
+        "key": " Terminal       "
     },
     {
         "type": "terminalfont",
-        "key": "󰯁 Terminal Font      "
+        "key": "󰯁 Terminal Font  "
     },
     {
         "type": "cpu",
-        "key": "󰻠 CPU                "
+        "key": "󰻠 CPU            "
     },
     {
         "type": "gpu",
-        "key": "󰢮 GPU                "
+        "key": "󰢮 GPU            "
     },
     {
         "type": "Memory",
-        "key": "󰍛 RAM                "
+        "key": "󰍛 RAM            "
     },
     {
         "type": "swap",
-        "key": " Swap               "
+        "key": " Swap           "
     },
     {
         "type": "disk",
-        "key": " Disk               "
+        "key": " Disk           "
     },
     {
         "type": "battery",
-        "key": " Battery            "
+        "key": " Battery        "
     },
     {
         "type": "uptime",
-        "key": " Uptime             "
+        "key": " Uptime         "
     },
     "break",
     {

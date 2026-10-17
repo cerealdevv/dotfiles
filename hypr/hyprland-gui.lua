@@ -15,14 +15,11 @@ hl.config({
     general = {
         border_size = 2,
         col = {
-            active_border = {
-                colors = {"rgba(f0b5dcff)", "rgba(ffb3b4ff)"},
-            },
-            inactive_border = {
-                colors = {"rgba(381130ff)", "rgba(4b2241ff)"},
-            },
+            active_border = "0xffbdc2ff",
+            inactive_border = "0xff131318",
         },
         gaps_in = 1,
         gaps_out = 5,
+        layout = "dwindle",
     },
 })

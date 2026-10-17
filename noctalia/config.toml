@@ -7,7 +7,7 @@ wallpaper_scheme = "m3-content"
 position = "top"
 start = ["launcher", "wallpaper", "control-center", "workspaces"]
 center = ["clock"]
-end = ["media", "tray", "notifications", "clipboard", "network", "bluetooth", "volume", "brightness", "battery", "session"]
+end = ["media", "tray", "notifications", "clipboard", "network", "volume", "brightness", "battery", "session"]
 
 [widget.launcher]
 custom_image = "~/.config/noctalia/assets/arch.svg"
@@ -19,3 +19,7 @@ show_label = false
 show_label = false
 [widget.media]
 hide_when_no_media = true
+
+[theme.templates]
+enable_builtin_templates = true
+builtin_ids = ["hyprland", "btop", "qt", "gtk3", "gtk4"]

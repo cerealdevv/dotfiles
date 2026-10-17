@@ -4,6 +4,7 @@ hl.monitor({ output = "eDP-1", mode = "1920x1080@60", position = "0x0", scale = 
 
 hl.config({
     input = { kb_layout = "de" },
+    xwayland = { force_zero_scaling = true },
 })
 
 hl.window_rule({
@@ -18,11 +19,11 @@ end)
 
 hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd("kitty"))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("dolphin"))
-hl.bind(mainMod .. " + R", hl.dsp.exec_cmd("hyprlauncher"))
+hl.bind(mainMod .. " + R", hl.dsp.exec_cmd("noctalia msg panel-toggle launcher"))
 hl.bind("ALT + F4", hl.dsp.window.close())
 hl.bind(mainMod .. " + M", hl.dsp.exit())
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
-hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd("grim -g \"$(slurp)\" - | wl-copy"))
+hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd("hyprshot -zm region --clipboard-only --silent")) -- hl.dsp.exec_cmd("grim -g \"$(slurp)\" - | wl-copy"))
 
 hl.bind(mainMod .. " + left",  hl.dsp.focus({ direction = "left" }))
 hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }))
@@ -37,5 +38,13 @@ for i = 1, 10 do
     hl.bind(mainMod .. " + SHIFT + " .. key, hl.dsp.window.move({ workspace = i }))
 end
 
+hl.device({
+    name = "syna2ba6:00-06cb:ce2d-touchpad",
+    enabled = false,
+})
+
 -- HyprMod managed settings
 require("hyprland-gui")
+
+-- For Noctalia Color templates
+require("noctalia").apply_theme()

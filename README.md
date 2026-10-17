@@ -3,14 +3,16 @@ cereal's dotfiles, planned to be used in MiraOS
 
 ## dependencies
 hyprland:
- - slurp
- - grim
- - wl-clipboard
- - hyprlauncher
+ - hyprshot
+ - hyprpicker
+ - noctalia
  - kitty
  - dolphin
 all of the above are OPTIONAL dependencies, it will work without them, but for the full experience
 they're reccomended.
+
+fastfetch:
+ - noctalia
 
 ## installation
 for a full config replacement, clone this repository and move all files to `~/.config`
